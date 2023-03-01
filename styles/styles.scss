@@ -17,7 +17,7 @@ $verde-escuro: #1E3A5F;
 
 body {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     font-family: $font-body;
     background: $body-color;
     color: white;
@@ -233,7 +233,7 @@ header {
 .banner {
     display: flex;    
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     background-image: url("../img/banner.jpg");
     background-size: cover;
     background-position: center;
@@ -253,6 +253,104 @@ header {
             font-size: 2.5em;
             width: 300px;
             margin: 0 auto;
+        }
+    }
+}
+
+.sobre .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+
+    .sobre__imagem {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .sobre__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        .sobre__info--titulo {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .sobre__info--texto {
+            font-size: 1.1em;
+            font-weight: 400;
+            line-height: 25px;
+        }
+
+        .sobre__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 1em 2em;
+            background: #4650BD;
+            box-shadow: 2px 4px 0px #444444;
+            border-radius: 32px;
+            color: white;
+            border: 0;
+            cursor: pointer;
+            font-weight: bold;
+
+            .btn--ingresso {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url("../img/local_activity.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &:hover {
+                background: #606ADA;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .sobre__imagem {
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .sobre__info {
+            width: 60%;
+            gap: 20px;
+        }
+
+        .sobre__info--texto {
+            line-height: 40px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .sobre__imagem {
+            width: 40%;
+            max-width: 700px;
+        }
+
+        .sobre__info {
+            width: 25%;
+            gap: 25px;
+        }
+
+        .sobre__info--texto {
+            line-height: 50px;
         }
     }
 }
