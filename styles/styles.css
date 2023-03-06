@@ -539,4 +539,203 @@ header .side-menu:checked ~ .hamb .hamb-line:after {
   .sustentabilidade .div__texto .div__texto--paragrafo {
     text-align: right;
   }
+}
+
+.header__mapa {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header__mapa::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mpa.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+.header__mapa .header__mapa--titulo {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: white;
+}
+
+.mapa {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+@media (min-width: 1440px) {
+  .mapa {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+  }
+}
+.mapa .mapa__img {
+  width: 100%;
+  max-width: 610px;
+  height: 450px;
+  max-height: 610px;
+}
+.mapa .mapa__img img {
+  width: 100%;
+  height: 100%;
+}
+.mapa .mapa__texto {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.mapa .mapa__texto .mapa__texto--lista {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+@media (min-width: 1440px) {
+  .mapa .mapa__texto .mapa__texto--lista {
+    align-items: flex-start;
+  }
+}
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(1)::before,
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(2)::before,
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(3)::before,
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(4)::before,
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(5)::before {
+  width: 16px;
+  height: 16px;
+  content: "";
+  background-color: #0E7DF1;
+  display: inline-block;
+  margin-right: 10px;
+}
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(2)::before {
+  background-color: #FE016E;
+}
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(3)::before {
+  background-color: #01A89E;
+}
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(4)::before {
+  background-color: #3F51B5;
+}
+.mapa .mapa__texto .mapa__texto--lista li:nth-of-type(5)::before {
+  background-color: #0E7DF1;
+}
+.mapa .mapa__texto .mapa__texto--titulo {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+.mapa .mapa__texto .mapa__texto--paragrafo {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 30px;
+}
+@media (min-width: 1400px) {
+  .mapa .mapa__texto .mapa__texto--paragrafo {
+    text-align: left;
+  }
+}
+@media (min-width: 1400px) {
+  .mapa .mapa__texto {
+    align-items: flex-start;
+  }
+}
+
+.setores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+@media (min-width: 1440px) {
+  .setores {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+  }
+}
+.setores .setor {
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.setores .setor .setor__imagem {
+  width: 80%;
+  max-width: 382px;
+  height: 200px;
+  max-height: 240px;
+  background-image: url("../img/pista.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+.setores .setor .premium {
+  background-image: url("../img/premium.jpg");
+}
+.setores .setor .cadeiras {
+  background-image: url("../img/cadeiras.jpg");
+}
+.setores .setor .setor__titulo {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+.setores .setor .setor__texto {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 25px;
+  width: 450px;
+}
+@media (min-width: 1440px) {
+  .setores .setor:nth-of-type(2) {
+    margin-top: 150px;
+  }
+}
+
+.header__info {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.header__info::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/info_banner.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+.header__info .header__info--titulo {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
