@@ -738,4 +738,62 @@ header .side-menu:checked ~ .hamb .hamb-line:after {
   font-size: 2.5em;
   font-weight: 700;
   color: white;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0;
+}
+.accordion .accordion__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.25em;
+}
+@media (min-width: 1440px) {
+  .accordion .accordion__item {
+    max-width: 900px;
+    padding: 0.5em;
+  }
+}
+.accordion .accordion__item .accordion__item--question {
+  font-size: 1.2em;
+  font-weight: 700;
+  background-color: #4650BD;
+  color: white;
+  padding: 0.5em;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .accordion .accordion__item .accordion__item--question {
+    font-size: 1.5em;
+  }
+}
+.accordion .accordion__item .accordion__item--question::after {
+  content: "+";
+  float: right;
+  margin-left: 15px;
+}
+.accordion .accordion__item .accordion__item--question.active::after {
+  content: "-";
+}
+.accordion .accordion__item .accordion__item--answer {
+  font-size: 1em;
+  line-height: 25px;
+  background-color: #C8DEEF;
+  padding: 1em;
+  color: #444444;
+  display: none;
+}
+@media (min-width: 768px) {
+  .accordion .accordion__item .accordion__item--answer {
+    font-size: 1.2em;
+  }
+}
+.accordion .accordion__item .active {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
