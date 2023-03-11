@@ -32,6 +32,39 @@
         <h1 class="header__ingresso--titulo">Garanta seu Ingresso</h1>
     </section>
 
+
+    <section class="formulario">
+        <h2>Preencha o formulário a seguir:</h2>
+        <form action="#">
+            <div class="form">
+                <div class="form__top">
+                    <div class="form__top--item">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="form__top--item">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                </div>
+                <div class="form__bottom">
+                    <div class="form__bottom--item">
+                        <label for="setor">Tipo de ingresso:</label>
+                        <select name="setor" id="setor">
+                            <option value="pista">Pista</option>
+                            <option value="premium">Premium</option>
+                            <option value="cadeiras">Cadeiras</option>
+                        </select>
+                    </div>
+                    <div class="form__bottom--item">
+                        <label for="data">Data de nascimento:</label>
+                        <input type="date" name="data" id="data">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button class="btn-comprar">Avançar!</button>
+    </section>
     <footer class="footer">
         <div class="footer__top">
             <div class="logo">
