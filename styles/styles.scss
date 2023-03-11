@@ -1000,3 +1000,119 @@ header {
             }
     }
 }
+
+//pagina confirmacao
+
+.header__confirm {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/confirmacao.jpg");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+    }
+
+    .header__confirm--titulo {
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.confirm__titulo-principal {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+    max-width: 600px;
+    text-align: center;
+    margin: 2em auto;
+
+    @media (min-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+.ingresso__confirm {
+    background: $body-color;
+    width: 100%;
+    max-width: 700px;
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 350px;
+    padding: 2em;
+
+    @media (max-width: 768px) {
+        height: 100%;
+    }
+
+    .confirm__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .confirm__header--logo {
+            font-family: $font-title;
+            font-size: 1.5em;
+            font-weight: 700;           
+        }
+
+        .confirm__header--simb {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+    }
+
+    .confirm__body {
+        display: flex;
+        align-items: flex-start;
+
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin-right: 1em;
+        }
+
+        .confirm__body--texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 90%;
+
+            .confirm__body--texto--nome {
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+
+            .confirm__body--texto--data {
+                font-size: 1em;
+                font-weight: 700;
+            }
+
+            .confirm__body--texto--local {
+                font-size: 1em;
+                font-weight: 700;
+            }
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 1em;
+        }
+    }
+}
