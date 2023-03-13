@@ -39,25 +39,25 @@
                 <div class="form__top">
                     <div class="form__top--item">
                         <label for="nome">Nome completo:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required minlength="3" maxlength="32">
                     </div>
                     <div class="form__top--item">
                         <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
                     </div>
                 </div>
                 <div class="form__bottom">
                     <div class="form__bottom--item">
                         <label for="setor">Tipo de ingresso:</label>
                         <select name="setor" id="setor">
-                            <option value="pista">Pista</option>
-                            <option value="premium">Premium</option>
-                            <option value="cadeiras">Cadeiras</option>
+                            <option value="Pista">Pista</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Cadeiras">Cadeiras</option>
                         </select>
                     </div>
                     <div class="form__bottom--item">
                         <label for="data">Data de nascimento:</label>
-                        <input type="date" name="data" id="data">
+                        <input type="date" name="data" id="data" required min="2013-01-01">
                     </div>
                 </div>
             </div>
